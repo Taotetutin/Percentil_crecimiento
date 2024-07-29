@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Percentil de Peso Fetal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Percentil de Peso Fetal</h2>
+        <label for="gender">Género:</label>
+        <select id="gender">
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+        </select>
+        <input type="number" id="weight" placeholder="Peso fetal en gramos">
+        <input type="number" id="gestationalWeeks" placeholder="Semanas de gestación">
+        <input type="number" id="gestationalDays" placeholder="Días de gestación">
+        <button onclick="calculatePercentile()">Calcular Percentil</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
